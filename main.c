@@ -34,6 +34,9 @@ int main()
     {
         printf("1) Crear archivo \n");
         printf("2) Leer archivo \n");
+        printf("3) Escribir archivo \n");
+        printf("4) Cargar articulo \n");
+        printf("5) Leer articulos \n");
         printf("0) Salir \n");
 
         fflush(stdin);
@@ -48,9 +51,21 @@ int main()
             leerArchivoBin();
             break;
 
+        case 3:
+            cargar3Num();
+            break;
+
+        case 4:
+            cargarArt();
+            break;
+
+        case 5:
+            leerArt();
+            break;
+
         }
     }
-    while(op<1 || op>3);
+    while(op!=0);
 
 
 
