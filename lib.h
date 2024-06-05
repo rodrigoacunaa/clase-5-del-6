@@ -3,6 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
+void leerArchivoBin();
+void crearArchivoBin();
 #endif // LIB_H_INCLUDED
