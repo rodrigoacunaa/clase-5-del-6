@@ -164,3 +164,41 @@ void cargar3Num()
     }
 }
 
+void buscarPorNom(){
+    FILE *archivo = fopen(NOM_ARCHIVO, "rb");
+    char cadenaBuscada[50];
+    int ids[50];
+    int coincidencias,i;
+    i=0;
+    coincidencias=0;
+    printf("Ingrese el nombre del articulo a buscar \n");
+    fflush(stdin);
+    gets(cadenaBuscada);
+
+
+
+            while (fread(&obj.nombre, sizeof(obj.nombre), 1, archivo)==1) {
+            if (strcmp(cadenaBuscada, obj.nombre) == 0) {
+                ids[coincidencias] = obj.id;
+                coincidencias++;
+            }
+            i++;
+      }
+
+        if(coincidencias>0){
+            printf("coincidencias: \n");
+            for(int i=0; i<coincidencias; i++){
+                    printf("%d \n",ids[i]);
+            }
+        }else{
+            printf("No se presentaron coincidencias \n");
+        }
+
+          }
+
+//ftell(archivo); --> devuelve la posición en donde se encuentra el puntero (suma de a 4 bytes)
+
+//fseek(archivo, cantidad de bytes, posicion inicial); --> con esta función podemos desplazar el puntero a donde queramos
+// SEEK_SET ubica al principio
+// SEEK_CUR --> se mueve a partir de la posición actual
+// SEEK_END --> se mueve a partir de la posición final

@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1717616615 source:c:\users\54224\desktop\archivos codeblocks\clase 5 del 6\lib.c
+1717622667 source:c:\users\54224\desktop\archivos codeblocks\clase 5 del 6\lib.c
 	<stdio.h>
 	<stdlib.h>
 	"lib.h"
 
-1717616094 c:\users\54224\desktop\archivos codeblocks\clase 5 del 6\lib.h
+1717622679 c:\users\54224\desktop\archivos codeblocks\clase 5 del 6\lib.h
 	<stdio.h>
 	<stdlib.h>
 
-1717616471 source:c:\users\54224\desktop\archivos codeblocks\clase 5 del 6\main.c
+1717621008 source:c:\users\54224\desktop\archivos codeblocks\clase 5 del 6\main.c
 	<stdio.h>
 	<stdlib.h>
 	"lib.h"

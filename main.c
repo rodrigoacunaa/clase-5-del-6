@@ -37,6 +37,7 @@ int main()
         printf("3) Escribir archivo \n");
         printf("4) Cargar articulo \n");
         printf("5) Leer articulos \n");
+        printf("6) Buscar articulo por nombre\n");
         printf("0) Salir \n");
 
         fflush(stdin);
@@ -61,6 +62,10 @@ int main()
 
         case 5:
             leerArt();
+            break;
+
+        case 6:
+            buscarPorNom();
             break;
 
         }

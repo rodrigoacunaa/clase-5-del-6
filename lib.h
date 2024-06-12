@@ -14,4 +14,5 @@ void crearArchivoBin();
 void cargar3Num();
 void cargarArt();
 void leerArt();
+void buscarPorNom();
 #endif // LIB_H_INCLUDED
